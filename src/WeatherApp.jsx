@@ -5,13 +5,13 @@ import "./WeatherApp.css";
 
 export default function WeatherApp() {
   const [weatherInfo, setWeatherInfo] = useState({
-    // city: "Palampur",
-    // feels_like: 35.05,
-    // humidity: 100,
-    // temp: 28.05,
-    // temp_max: 28.05,
-    // temp_min: 28.05,
-    // weather: "mist",
+    city: "Palampur",
+    feels_like: 35.05,
+    humidity: 100,
+    temp: 28.05,
+    temp_max: 28.05,
+    temp_min: 28.05,
+    weather: "mist",
   });
 
   let updateInfo = (newInfo) => {

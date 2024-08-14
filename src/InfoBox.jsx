@@ -1,8 +1,8 @@
+import "./InfoBox.css";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import "./InfoBox.css";
 import HOT_IMG from "./assets/HOT_IMG.jpg"
 import COLD_IMG from "./assets/COLD_IMG.jpg"
 import RAIN_IMG from "./assets/RAIN_IMG.jpg"
@@ -17,7 +17,7 @@ export default function InfoBox({ info }) {
   return (
     <div className="infoBox">
       <div className="cardContainer">
-        <Card sx={{ maxWidth: 345 }}>
+        <Card className="card"sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
             image={
@@ -29,7 +29,7 @@ export default function InfoBox({ info }) {
             }
             title="Weather Image"
           />
-          <CardContent>
+          <CardContent className="cardContent">
             <Typography gutterBottom variant="h5" component="div">
               {info.city} {
                 info.humidity > 80
